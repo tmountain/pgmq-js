@@ -38,7 +38,7 @@ export class Pgmq {
   private async prepare() {
     const client = await this.pool.connect();
     try {
-      await client.query('CREATE EXTENSION IF NOT EXISTS pgmq CASCADE;');
+      // await client.query('CREATE EXTENSION IF NOT EXISTS pgmq CASCADE;');
     } finally {
       client.release();
     }
