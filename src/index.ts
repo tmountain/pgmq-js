@@ -1,5 +1,5 @@
-import { Client } from 'pg';
-import Pool from 'pg-pool';
+import { Pool } from "npm:pg-pool@3.6.1";
+import { Client } from "npm:pg@8.11.3";
 import { PgPoolConfig } from './types';
 import {
   DEFAULT_CONNECTION_TIMEOUT_MILLIS,
